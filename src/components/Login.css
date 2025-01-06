@@ -1,0 +1,31 @@
+.login{
+    background-color: black;
+    width: 200px;
+    height: 300px;
+    padding: 60px;
+    border-radius: 10px;
+  
+  }
+  .login h2{
+  color: white;
+  }
+  .login input{
+    width: auto;
+    height: auto;
+    background-color: rgb(59, 57, 57);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  color:white;
+  }
+  .login button{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+  }
+  .login p{
+    font-size: small;
+    color: gray;
+  }

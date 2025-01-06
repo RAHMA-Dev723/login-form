@@ -1,9 +1,10 @@
-import "./Form.css";
+import "./Login.css";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-function Form() {
+import { Link } from "react-router-dom";
+function Login() {
   const [formInputs, setformInputs] = useState({
     email: "",
     password: "",
@@ -14,7 +15,7 @@ function Form() {
     <div className="login">
       <form
         onSubmit={(e) => {
-          // لمن عمل تحديث للصفحة
+          // لمنع عمل تحديث للصفحة
           e.preventDefault();
           console.log(formInputs);
           // عندما نقوم بتسجيل الدخول يتم ارسال البيانات الى ال api
@@ -64,8 +65,10 @@ function Form() {
           }}
         ></input>
         <button type="submit">Login</button>
+        <p>dont have an account?</p>
+        <Link to="/Signup">sign up</Link>
       </form>
     </div>
   );
 }
-export default Form;
+export default Login;
