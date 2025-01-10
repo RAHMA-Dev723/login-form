@@ -12,7 +12,7 @@ function App() {
   return (
   <Router>
     <Routes>
-      <Route path="/Login" element={<Login/>}/>
+      <Route path="/" element={<Login/>}/>
       <Route path="/ProtectedPage" element={<ProtectedRouter> <ProtectedPage /> </ProtectedRouter>}/>
       <Route path="/AdminDashboard" element={<ProtectedRouter> <AdminDashboard  /> </ProtectedRouter>}/>
       <Route path="/Signup" element={<ProtectedRouter> <Signup /> </ProtectedRouter>}/>
